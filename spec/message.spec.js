@@ -27,24 +27,5 @@ describe("Message class", function() {
       assert.strictEqual(message.commands, commands);
   });
 
-  class Dog {
-	constructor(color) {
-	this.color = color
-	}
-}
-
-// Should set color to brown if first argument is “brown”.
-
-let actualDogColor = new Dog("brown").color;
-let expectedDogColor = "brown";
-
-if (actualDogColor !== expectedDogColor) { 
-console.log(`error for unit ‘Dog’. Expected: ${expectedDogColor}, but actually got: ${actualDogColor}.`);
-	}
-else { console.log(`'Should set color to brown if first argument is "brown"' test passed!`); 
-        }
-
-
-
 });
 
