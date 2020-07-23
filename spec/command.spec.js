@@ -1,5 +1,5 @@
 const assert = require('assert');
-const Command = require('../command.js');
+const Command = require('../classes/command');
 
 describe("Command class", function() {
   

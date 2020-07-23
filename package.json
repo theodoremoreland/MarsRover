@@ -1,0 +1,22 @@
+{
+  "name": "marsrover",
+  "version": "1.0.0",
+  "description": "This project was a homework assignment from LaunchCode's Lc101 (2019).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theodoremoreland/MarsRover.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theodoremoreland/MarsRover/issues"
+  },
+  "homepage": "https://github.com/theodoremoreland/MarsRover#readme",
+  "devDependencies": {
+    "jasmine": "^3.5.0"
+  }
+}
