@@ -29,7 +29,7 @@ describe("Rover class", function() {
     assert.strictEqual(response.results.length, message.commands.length);
   });
 
-  it("should responds correctly to status check", function() {
+  it("should respond correctly to status check", function() {
     const rover = new Rover("121500", ["Liftoff"]);
     const message = new Message("e1"
                               , [new Command('STATUS_CHECK')]);
