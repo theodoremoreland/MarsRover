@@ -11,7 +11,7 @@ Below is a walkthrough of the Test Driven Devlopment of the suite(s) and classes
 
 ## Define Command Class
 
-<img src="presentation/1.PNG" width="900">
+<img src="presentation/1.PNG" width="600">
 
 ## Test Command Class
 
@@ -19,11 +19,11 @@ Below is a walkthrough of the Test Driven Devlopment of the suite(s) and classes
 
 ## Develop Command Class
 
-<img src="presentation/3.PNG" width="900">
+<img src="presentation/3.PNG" width="600">
 
 ## Define Message Class
 
-<img src="presentation/5.PNG" width="900">
+<img src="presentation/5.PNG" width="600">
 
 ## Test Message Class
 
@@ -31,11 +31,11 @@ Below is a walkthrough of the Test Driven Devlopment of the suite(s) and classes
 
 ## Develop Message Class
 
-<img src="presentation/7.PNG" width="900">
+<img src="presentation/7.PNG" width="600">
 
 ## Define Rover Class
 
-<img src="presentation/8.PNG" width="900">
+<img src="presentation/8.PNG" width="600">
 
 ## Test Rover
 
@@ -43,7 +43,7 @@ Below is a walkthrough of the Test Driven Devlopment of the suite(s) and classes
 
 ## Develop Rover Class
 
-<img src="presentation/10.PNG" width="900">
+<img src="presentation/10.PNG" width="800">
 
 ## Verify Tests Pass
 
