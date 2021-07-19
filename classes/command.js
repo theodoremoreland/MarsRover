@@ -1,12 +1,12 @@
 class Command {
   constructor(commandType, value) {
-    this.commandType = commandType;
     if (!commandType) {
-      throw Error("Type required");
+        throw Error("Type required");
     }
+
+    this.commandType = commandType;
     this.value = value;
   }
-
 }
 
 module.exports = Command;
