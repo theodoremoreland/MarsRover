@@ -5,23 +5,19 @@ class Rover {
     this.generatorWatts = 110;
   }
 
-  receiveMessage(message) {
-    const results = [];
+  processCommand(command, value) {
+    let result = {};
 
-    for (let _class of message.commands) {
-      const command = _class.commandType;
-      const value = _class.value;
-      let result = {};
-
-        if (command === "STATUS_CHECK") {
+    switch(command) {
+        case "STATUS_CHECK":
             result = {
                 completed: true,
                 mode: this.mode,
                 generatorWatts: this.generatorWatts,
                 position: this.position
             };
-        } 
-        else if (command === "MOVE") {
+            break;
+        case "MOVE":
             if (this.mode === "LOW_POWER") { 
                 result.completed = false; 
                 result.position = this.position;
@@ -30,20 +26,31 @@ class Rover {
                 result.completed = true;
                 result.position = value; this.position = value;
             }
-        }
-        else if ( command === "MODE_CHANGE" ) {
+            break;
+        case "MODE_CHANGE":
             result.completed = true;
             result.mode = value; this.mode = value;
-        }
-        else {
+            break;
+        default:
             result.completed = false;
             result.message = 'UNKNOWN COMMAND';
-        }
+    }
+
+    return result;
+  }
+
+  receiveMessage(message) {
+    const results = [];
+
+    for (let _class of message.commands) {
+        const command = _class.commandType;
+        const value = _class.value;
+        const result = this.processCommand(command, value);
 
         results.push(result); 
     }
 
-    return { name: message.name, results: results }
+    return { name: message.name, results: results };
   }
 }
 
